@@ -25,8 +25,12 @@
 }
 
 .sub-heading-content {
-    padding-top: 14px!important;
-    padding-bottom: 14px!important;
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+}
+
+.btn:hover {
+    opacity: 0.8;
 }
 
 /* header - nav */
@@ -129,7 +133,8 @@ header .img-background-youtube {
     margin: 0;
 }
 
-.content .register .heading-content.line-down::after, .content .categories .heading-content.line-down::after {
+.content .register .heading-content.line-down::after,
+.content .categories .heading-content.line-down::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -163,6 +168,7 @@ header .img-background-youtube {
     border-radius: 3px;
     box-sizing: border-box;
     padding: 15px 19.59px;
+    margin-bottom: 24px;
 }
 
 .content .btn-register {
@@ -272,6 +278,7 @@ header .img-background-youtube {
     color: #FFFFFF;
     padding: 13px 28px 13px 28px;
 }
+
 /* End utilities */
 /* Categories */
 .content .categories {
@@ -284,5 +291,194 @@ header .img-background-youtube {
     padding: 15px 35px;
 }
 
+.content .categories .footer-content {
+    margin-top: 32px;
+}
+
 /* End categories */
+
+/* Perspective */
+.content .perspective {
+    background-color: #E6F2FF;
+    padding: 36px 36px 80px 36px;
+}
+
+/* End perspective */
 /* End content */
+
+/* footer */
+footer {
+    background: url("../imgs/banner/image 169.png") top center / cover no-repeat;
+    color: #FFFFFF;
+}
+
+footer .footer-main {
+    padding: 60px 0;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+footer .logo-footer {
+    padding: 15px;
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+footer .heading-footer {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    position: relative;
+}
+
+footer .heading-footer::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #DC4F26;
+    left: 0;
+    bottom: 0;
+}
+
+footer .body-footer {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+footer .input-footer {
+    font-size: 14px;
+    line-height: 22px;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 3px;
+    color: rgba(106, 124, 146, 0.2);
+    padding: 14px 12px;
+    margin-bottom: 14px;
+}
+
+footer .btn-footer {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 26px;
+    width: 100%;
+    text-align: center;
+    background: #DC4F26;
+    border-radius: 3px;
+}
+
+footer .item-body-footer {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 21px;
+}
+
+footer .icon-footer {
+    margin-right: 13px;
+}
+
+footer .copyright {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 24px;
+}
+/* End footer */
+
+@media (max-width: 720px) {
+    .header-nav .nav-item::after {
+        top: 0px;
+    }
+    .content .register, .content .trademark, .content .categories, .content .utilities{
+        padding: 40px;
+    }
+
+    .content .sub-content {
+        padding-top: 16px;
+        padding-bottom: 0;
+    }
+
+    .content .heading-content {
+        padding: 16px;
+    }
+
+    .content .item-trademark, .content .item-utilities, .content .item-categories  {
+        padding-top: 0;
+        padding-bottom: 24px;
+    }
+    /* trademark */
+    .content .item-trademark:first-child {
+        order: 2;
+    }
+
+    .content .item-trademark:nth-child(2) {
+        order: 1;
+    }
+
+    .content .item-trademark:nth-child(3) {
+        order: 3;
+    }
+    .content .item-trademark:last-child {
+        order: 4;
+    }
+    /* categories */
+    .content .item-categories:first-child {
+        order: 1;
+    }
+    
+    .content .item-categories:nth-child(2) {
+        order: 2;
+    }
+
+    .content .item-categories:nth-child(3) {
+        order: 4;
+    }
+
+    .content .item-categories:nth-child(4) {
+        order: 3;
+    }
+
+    .content .item-categories:nth-child(5) {
+        order: 5;
+    }
+
+    .content .item-categories:last-child {
+        order:6;
+    }
+
+    /* utilities */
+    .content .item-utilities .name-img {
+        bottom: 24px;
+    }
+    /* perspective */
+    .content .footer-content {
+        margin-bottom: 0;
+    }
+    .content .perspective {
+        padding: 48px;
+    }
+
+    .content .perspective .body-content {
+        margin-top: 0;
+    }
+    /* footer */
+    footer .footer-main {
+        padding: 32px;
+    }
+
+    footer .logo-footer {
+        width: 80%;
+    }
+
+    footer .item-body-footer:last-child {
+        margin-bottom: 0;
+    }
+
+    footer .copyright {
+        padding: 32px;
+    }
+}
